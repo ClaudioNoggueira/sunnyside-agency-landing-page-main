@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  --blue-color-light: hsl(200, 100%, 72%);
+  --blue-color: hsl(200, 100%, 62%);
+  --blue-color-dark: hsl(200, 99%, 36%);
+  --font-barlow: "Barlow", sans-serif;
+  --font-frances: "Frances", serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +21,8 @@ html {
 }
 
 body {
+  font-family: var(--font-barlow);
+  font-size: 1.8rem;
   overflow-x: hidden;
 }
 
@@ -46,10 +58,6 @@ strong {
 
 .flex {
   display: flex;
-}
-
-.column {
-  flex-direction: column;
 }
 
 .grid {
@@ -98,4 +106,61 @@ strong {
 
 .justify-text {
   text-align: justify;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* REUSABLE */
+.btn {
+  border-radius: 32px;
+  font-family: var(--font-frances);
+  font-size: 1.6rem;
+  padding: 1.8rem 2.8rem;
+}
+
+.btn:hover {
+  background-color: var(--blue-color-light);
+  color: #fff;
+}
+
+.btn-full {
+  background-color: var(--blue-color-dark);
+}
+
+.btn-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* HEADER */
+header {
+  align-items: center;
+  background-color: var(--blue-color);
+  justify-content: space-between;
+  padding: 0 4.8rem;
+  height: 9.6rem;
+}
+
+.nav-list {
+  align-items: center;
+  flex-direction: row;
+  gap: 4.8rem;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-list li {
+  font-size: 1.6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--blue-color-dark);
 }
