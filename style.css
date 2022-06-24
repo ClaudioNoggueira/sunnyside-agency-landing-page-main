@@ -131,6 +131,13 @@ strong {
   text-transform: uppercase;
 }
 
+.heading-primary {
+  color: #fff;
+  font-family: var(--font-frances);
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+
 /* /////////////////////////////////////////////////////////// */
 /* HEADER */
 header {
@@ -139,6 +146,10 @@ header {
   justify-content: space-between;
   padding: 0 4.8rem;
   height: 9.6rem;
+}
+
+.logo {
+  font-size: 4.8rem;
 }
 
 .nav-list {
@@ -163,4 +174,39 @@ header {
 .nav-link:hover,
 .nav-link:active {
   color: var(--blue-color-dark);
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* HERO */
+.hero-section {
+  align-items: center;
+  background-color: var(--blue-color);
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+.hero-section div {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 9;
+}
+
+.hero-section div h1 {
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.hero-icon {
+  color: #fff;
+  margin-top: 8rem;
+}
+
+.image {
+  width: 90%;
+  z-index: 8;
 }
