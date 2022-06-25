@@ -336,3 +336,55 @@ header {
   line-height: 1.5;
   margin-top: 1.8rem;
 }
+
+/* /////////////////////////////////////////////////////////// */
+/* TESTIMONIALS */
+.testimonials-section {
+  text-align: center;
+  padding: 14.4rem 0;
+}
+
+.testimonials-section h2 {
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.testimonials-section .grid {
+  column-gap: 4.8rem;
+  padding: 8rem;
+}
+
+.testimonial {
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: flex-start;
+}
+
+.testimonial .image {
+  border-radius: 50%;
+  width: 25%;
+}
+
+.testimonial p {
+  color: var(--neutral-blue-grayish-darker);
+  margin-top: 3.6rem;
+}
+
+.testimonial div {
+  margin-top: 4.8rem;
+}
+
+.testimonial div strong {
+  color: var(--neutral-blue-desaturated-darker);
+  display: block;
+  font-family: var(--font-fraunces);
+  font-weight: 900;
+}
+
+.testimonial div span {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+}
