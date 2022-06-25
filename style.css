@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 
 :root {
-  --blue-color-light: hsl(200, 100%, 72%);
-  --blue-color: hsl(200, 100%, 62%);
-  --blue-color-dark: hsl(200, 99%, 36%);
+  /* TYPOGRAPHY */
   --font-barlow: "Barlow", sans-serif;
-  --font-frances: "Frances", serif;
+  --font-fraunces: "Fraunces", serif;
+
+  /* COLORS */
+  --blue-light: hsl(200, 100%, 72%);
+  --blue: hsl(200, 100%, 62%);
+  --blue-dark: hsl(198, 62%, 26%);
+  --cyan-dark-dasturated: hsl(167, 40%, 24%);
+  --cyan-dark-moderate: hsl(168, 34%, 41%);
+
+  --neutral-blue-desaturated-darker: hsl(212, 27%, 19%);
+  --neutral-blue-grayish-darker: hsl(213, 9%, 39%);
+  --neutral-blue-grayish-dark: hsl(232, 10%, 55%);
+  --neutral-blue-grayish: hsl(210, 4%, 67%);
+
+  --red-soft: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
 }
 
 * {
@@ -21,6 +34,7 @@ html {
 }
 
 body {
+  color: var(--neutral-blue-grayish-dark);
   font-family: var(--font-barlow);
   font-size: 1.8rem;
   overflow-x: hidden;
@@ -44,10 +58,6 @@ h3 {
 
 p {
   line-height: 1.5;
-}
-
-strong {
-  font-weight: 500;
 }
 
 .container {
@@ -76,54 +86,22 @@ strong {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.margin-bottom-smaller {
-  margin-bottom: 1.2rem;
-}
-
-.margin-bottom-small {
-  margin-bottom: 2.4rem;
-}
-
-.margin-bottom-medium {
-  margin-bottom: 4.8rem;
-}
-
-.margin-bottom-big {
-  margin-bottom: 6.4rem;
-}
-
-.margin-bottom-bigger {
-  margin-bottom: 8rem;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.justify-text {
-  text-align: justify;
-}
-
 /* /////////////////////////////////////////////////////////// */
 /* REUSABLE */
 .btn {
   border-radius: 32px;
-  font-family: var(--font-frances);
+  font-family: var(--font-fraunces);
   font-size: 1.6rem;
   padding: 1.8rem 2.8rem;
 }
 
 .btn:hover {
-  background-color: var(--blue-color-light);
+  background-color: var(--blue-light);
   color: #fff;
 }
 
 .btn-full {
-  background-color: var(--blue-color-dark);
+  background-color: var(--blue-dark);
 }
 
 .btn-link {
@@ -133,16 +111,22 @@ strong {
 
 .heading-primary {
   color: #fff;
-  font-family: var(--font-frances);
-  font-size: 5.2rem;
+  font-family: var(--font-fraunces);
+  font-size: 4.8rem;
   text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-family: var(--font-fraunces);
 }
 
 /* /////////////////////////////////////////////////////////// */
 /* HEADER */
 header {
   align-items: center;
-  background-color: var(--blue-color);
+  background-color: var(--blue);
   justify-content: space-between;
   padding: 0 4.8rem;
   height: 9.6rem;
@@ -173,14 +157,14 @@ header {
 
 .nav-link:hover,
 .nav-link:active {
-  color: var(--blue-color-dark);
+  color: var(--blue-dark);
 }
 
 /* /////////////////////////////////////////////////////////// */
 /* HERO */
 .hero-section {
   align-items: center;
-  background-color: var(--blue-color);
+  background-color: var(--blue);
   flex-direction: column;
   justify-content: center;
   padding: 0;
@@ -209,4 +193,60 @@ header {
 .image {
   width: 90%;
   z-index: 8;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* TRANSFORM */
+.transform-section {
+  padding: 0;
+}
+
+.transform-section div {
+  padding: 12rem;
+}
+
+.transform-section div:nth-child(2) {
+  background-color: var(--yellow);
+}
+
+.text-container {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3.6rem;
+  justify-content: center;
+}
+
+.text-container h2 {
+  color: var(--neutral-blue-desaturated-darker);
+}
+
+.text-container a:link,
+.text-container a:visited {
+  color: var(--neutral-blue-desaturated-darker);
+  font-family: var(--font-fraunces);
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.text-container a::after {
+  content: "";
+
+  border-radius: 12px;
+  border: 6px solid var(--yellow);
+  color: var(--yellow);
+  display: none;
+  font-size: 1px;
+  transition: all 0.3s;
+  width: 12.8rem;
+  z-index: -1;
+
+  position: absolute;
+  top: 60%;
+  left: -5%;
+}
+
+.text-container a:hover:after {
+  display: block;
 }
