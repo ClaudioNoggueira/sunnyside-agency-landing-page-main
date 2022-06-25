@@ -40,10 +40,6 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  padding: 9.6rem 0;
-}
-
 a:link,
 a:visited {
   text-decoration: none;
@@ -167,7 +163,6 @@ header {
   background-color: var(--blue);
   flex-direction: column;
   justify-content: center;
-  padding: 0;
   position: relative;
 }
 
@@ -197,11 +192,7 @@ header {
 
 /* /////////////////////////////////////////////////////////// */
 /* TRANSFORM */
-.transform-section {
-  padding: 0;
-}
-
-.transform-section div {
+.transform-section div:first-child {
   padding: 12rem;
 }
 
@@ -249,4 +240,19 @@ header {
 
 .text-container a:hover:after {
   display: block;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* STAND OUT */
+.standout-section div:nth-child(2) {
+  padding: 12rem;
+}
+
+.standout-section .image {
+  width: 100%;
+}
+
+.standout-section .text-container a::after {
+  border: 6px solid var(--red-soft);
+  color: var(--red-soft);
 }
