@@ -104,6 +104,7 @@ section:not(.hero-section) {
   font-family: var(--font-fraunces);
   font-size: 1.6rem;
   padding: 1.8rem 2.8rem;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -112,7 +113,8 @@ section:not(.hero-section) {
 }
 
 .btn-full {
-  background-color: var(--blue-dark);
+  background-color: #fff;
+  color: var(--blue-dark);
 }
 
 .btn-link {
@@ -183,6 +185,7 @@ header {
   justify-content: space-between;
   padding: 0 4.8rem;
   height: 9.6rem;
+  position: relative;
 }
 
 .logo {
@@ -211,6 +214,28 @@ header {
 .nav-link:hover,
 .nav-link:active {
   color: var(--blue-dark);
+}
+
+/* MOBILE NAVIGATION */
+.mobile-nav-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+.mobile-nav-button span {
+  font-size: 4.8rem;
+}
+
+.mobile-nav-button span[name="menu-icon"] {
+  display: block;
+}
+
+.mobile-nav-button span[name="close-icon"] {
+  display: none;
 }
 
 /* /////////////////////////////////////////////////////////// */
@@ -529,6 +554,14 @@ footer .social-icon path:hover {
 
   .grid--2-cols {
     grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    padding-top: 6.4rem;
+  }
+
+  .hero-section .image {
+    width: 100%;
   }
 
   .text-container {
