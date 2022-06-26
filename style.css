@@ -622,4 +622,32 @@ footer .social-icon path:hover {
   .attribution {
     font-size: 1.6rem;
   }
+
+  /* MOBILE NAVIGATION */
+  .mobile-nav-button {
+    display: block;
+  }
+
+  .nav-list {
+    align-items: center;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 4.8rem;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-link {
+    font-size: 3rem;
+  }
 }
