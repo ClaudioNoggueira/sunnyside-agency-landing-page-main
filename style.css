@@ -56,6 +56,10 @@ p {
   line-height: 1.5;
 }
 
+.image {
+  width: 100%;
+}
+
 section:not(.hero-section) {
   margin: 0 auto;
   max-width: 150rem;
@@ -190,7 +194,7 @@ header {
   margin-top: 8rem;
 }
 
-.image {
+.hero-section .image {
   width: 90%;
   z-index: 8;
 }
@@ -253,10 +257,6 @@ header {
   padding: 12rem;
 }
 
-.standout-section .image {
-  width: 100%;
-}
-
 .standout-section .text-container a::after {
   border: 6px solid var(--red-soft);
   color: var(--red-soft);
@@ -270,11 +270,6 @@ header {
   flex-direction: column;
   gap: 2.4rem;
   position: relative;
-}
-
-.graphic-design .image {
-  width: 100%;
-  z-index: 0;
 }
 
 .graphic-design div {
@@ -308,10 +303,6 @@ header {
   flex-direction: column;
   gap: 2.4rem;
   position: relative;
-}
-
-.photography .image {
-  width: 100%;
 }
 
 .photography div {
@@ -387,4 +378,10 @@ header {
   display: block;
   font-size: 1.4rem;
   margin-top: 1.2rem;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* GALLERY */
+.gallery-section {
+  padding: 0;
 }
