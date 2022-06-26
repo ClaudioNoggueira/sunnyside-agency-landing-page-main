@@ -10,7 +10,7 @@
   --blue: hsl(200, 100%, 62%);
   --blue-dark: hsl(198, 62%, 26%);
   --cyan-dark-dasturated: hsl(167, 40%, 24%);
-  --cyan-dark-moderate: hsl(168, 34%, 41%);
+  --cyan-dark-moderate: hsl(167, 44%, 70%);
 
   --neutral-blue-desaturated-darker: hsl(212, 27%, 19%);
   --neutral-blue-grayish-darker: hsl(213, 9%, 39%);
@@ -384,4 +384,73 @@ header {
 /* GALLERY */
 .gallery-section {
   padding: 0;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* FOOTER */
+footer {
+  align-items: center;
+  background-color: var(--cyan-dark-moderate);
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  padding: 8rem 9.6rem;
+}
+
+footer .logo {
+  fill: var(--cyan-dark-dasturated);
+}
+
+footer .nav-list {
+  gap: 6.4rem;
+}
+
+footer .nav-link:link,
+footer .nav-link:visited {
+  color: var(--cyan-dark-dasturated);
+  transition: all 0.2s;
+}
+
+footer .nav-link:hover,
+footer .nav-link:active {
+  color: #fff;
+}
+
+footer .socials {
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+footer .social-icon {
+  cursor: pointer;
+}
+
+footer .social-icon path {
+  transition: all 0.2s;
+}
+
+footer .social-icon path:hover {
+  fill: #fff;
+}
+
+.attribution {
+  align-items: center;
+  color: var(--cyan-dark-dasturated);
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1.2rem;
+  justify-content: space-between;
+  margin-top: 6.4rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: #fff;
 }
