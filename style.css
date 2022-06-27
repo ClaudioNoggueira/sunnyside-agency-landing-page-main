@@ -524,6 +524,10 @@ footer .social-icon path:hover {
   .photography div {
     padding: 0 4.8rem;
   }
+
+  .testimonial .image {
+    width: 40%;
+  }
 }
 
 @media (max-width: 580px) {
@@ -547,6 +551,10 @@ footer .social-icon path:hover {
 }
 
 @media (max-width: 528px) {
+  body {
+    text-align: center;
+  }
+
   .grid--4-cols,
   .grid--3-cols {
     grid-template-columns: 1fr 1fr;
@@ -676,5 +684,37 @@ footer .social-icon path:hover {
   .nav-open .btn-full {
     background-color: var(--yellow);
     padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .image {
+    width: 120%;
+  }
+
+  .hero-section {
+    padding-top: 0;
+  }
+
+  .hero-section .image {
+    width: 150%;
+  }
+
+  .hero-section div {
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .graphic-design div,
+  .photography div {
+    padding: 4.8rem 6.4rem 0;
+  }
+
+  .testimonial .image {
+    width: 45%;
+  }
+
+  .gallery-section .image {
+    width: 100%;
   }
 }
