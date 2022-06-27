@@ -162,7 +162,6 @@ section:not(.hero-section) {
   border-radius: 12px;
   border: 6px solid var(--yellow);
   color: var(--yellow);
-  display: none;
   font-size: 1px;
   transition: all 0.3s;
   width: 12.8rem;
@@ -174,7 +173,7 @@ section:not(.hero-section) {
 }
 
 .text-container a:hover:after {
-  display: block;
+  top: 40%;
 }
 
 /* /////////////////////////////////////////////////////////// */
